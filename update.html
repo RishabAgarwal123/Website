@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Update Status</title>
+	<style type="text/css">
+		ul
+		{
+			background-color:red;
+			margin:0;
+
+			padding: 0;
+			list-style-type: none;
+			overflow: hidden;
+		}
+		li
+		{
+			float: left;
+			margin-left: 10px;
+			padding-top: -10px;
+
+		}
+		li a
+		{
+			display: inline-block;
+			color: white;
+			text-decoration: none;
+			padding:14px;
+			margin-right: 10px;
+			padding-right: -50px;
+			text-align: center;
+		}
+		.box
+		{
+			padding:20px;
+			height: 700px;
+			width:500px;
+			
+			margin-top: 100px;
+			margin-left: 50px;
+		}
+		h2
+		{
+			font-size: 30px;
+		}
+		img
+		{
+			height:400px;
+			width:450px;
+		}
+		p
+		{
+			font-family: Comic Sans MS;
+		}
+		.update
+		{
+			margin-left:670px;
+			
+			height: 500px;
+			width:200px;
+			margin-top: -620px;
+
+		}
+		h3
+		{
+			text-align: left;
+			font-size:30px;
+		}
+		input[type="text"]
+		{
+			padding: 12px;
+			color:black;
+			border:5px solid red;
+		}
+		input[type="submit"]
+		{
+			padding:14px 80px;
+			text-align: center;
+			color:white;
+			margin-top:20px;
+			background-color:maroon;
+
+
+		}
+	    li a.active {
+  background-color: #4CAF50;
+  color: white;
+         } 
+
+        li a:hover:not(.active)
+        {
+  background-color: #555;
+  color: white;
+        }
+	</style>
+	<script type="text/javascript">
+		function validate()
+		{
+			var x=document.getElementById("demo").value;
+			if (x =="")
+			{
+				alert("Order on the way")
+			}
+			else
+			{
+				alert("Order has been Delivered")
+			}
+		}
+	</script>
+</head>
+<body>
+<ul>
+	<li><a href="admin.html" target="_blank">Add Pizza </a></li>
+	<li><a href="edit.html" target="_blank"> Edit Pizza </a></li>
+	<li><a class="active">  Update Order Status</a></li>
+	<li><a href="sales.html" target="_blank"> View Sales</a></li>
+	<li><a href="front.html" target="_blank"> Logout</a></li>
+</ul>
+<div class="box">
+	<h2> Update Orders </h2>
+	<img src="logo1.jpg" alt= "update orders">
+	<p> Friendship contrasted solicitude insipidity in introduced literature it. He seemed denote except as oppose do spring my. Between any may mention evening age shortly can ability regular. He shortly sixteen of colonel colonel evening cordial to. Although jointure an my of mistress servants am weddings. Age why the therefore education unfeeling for arranging. Above again money own scale maids ham least led. Returned settling produced strongly ecstatic use yourself way. Repulsive extremity enjoyment she perceived nor. </p>
+</div>
+
+<div class="update">
+	<h3> Update Status </h3>
+	<form>
+	<input type="text" id="demo" name="" placeholder="enter order id ">
+	<input type="submit" value="Submit" onclick="validate()">
+
+	
+</div>
+</body>
+</html>

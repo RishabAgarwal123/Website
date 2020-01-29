@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		body
+		{
+			margin: 0;
+			padding: 0;
+			font-family: sans-serif;
+			background:#34495e;
+
+		}
+		.box
+		{
+			width: 400px;
+			padding: 40px;
+			position: absolute;
+			top:50%;
+			left: 50%;
+			background: #191919;
+		    transform: translate(-50%,-50%);
+		}
+		.box input[type="text"],.box input[type=password],.box input[type="email"]
+		{
+			border:0;
+			background:none;
+			display:block;
+			margin: 20px auto;
+			text-align: center;
+			border: 2px solid #3498db;
+			padding:14px 10px;
+			width: 200px;
+			outline: none;
+			color: white;
+			border-radius: 25px;
+			transition: 0.5s;
+		}
+		.box h1
+		{
+			color: white;
+			text-transform: uppercase;
+			font-weight:100;
+			text-align: center;
+		}
+		.box input[type="text"]:focus,.box input[type=password]:focus,.box input[type="email"]:focus
+		{
+			width: 280px;
+			border-color: #2e6671;
+		}
+		.box input[type="submit"]
+		{
+			border:0;
+			background:none;
+			display:block;
+			margin: 30px auto;
+			text-align: center;
+			border: 2px solid #2ecc71;
+			padding:14px 10px;
+			width: 100px;
+			outline: none;
+			color: white;
+			border-radius: 25px;
+			transition: 0.5s;
+		}
+		.box input[type="submit"]:hover
+		{
+			background: #2ecc71;
+		}
+	</style>
+</head>
+<body>
+<form class="box" action="admin.html" target="_blank">
+	<h1> LogIn</h1>
+	<p> Name : <input type="text" name="" required placeholder="enter your name "></p>
+	<!--<p> Email : <input type="Email" name="" placeholder="enter your email "></p>-->
+	<p> Password : <input type="Password" required name="" placeholder="enter your password"></p>
+	<input type="submit" name="" value="LogIn">
+</form>
+</body>
+</html>

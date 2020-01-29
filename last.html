@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		.box1
+		{
+			border:2px solid red;
+			height:600px;
+			width:1000px;
+			margin: 200px 400px 200px 400px;
+			text-align: center;
+			padding: 20px;
+			background-color:black;
+
+			
+		}
+		p
+		{
+			color:blue;
+			font-size: 40px;
+			font-family: Comic Sans MS;
+		}
+		button
+		{
+			padding: 1rem;
+		  cursor: pointer;
+		  font-size: 25px;
+		  color: white;
+		  font-family: Comic Sans MS;
+		  background: teal;
+		  border-radius: 8px;
+		  margin-right: 5px;
+		  text-align: center;
+		}
+		h2
+		{
+			color:red;
+			font-size: 40px;
+
+
+		}
+		body
+		{
+			background:url("bg_3.jpg");
+		}
+		input[type="text"]
+		{
+			font-size: 30px;
+		} 
+	</style>
+	<script type="text/javascript">
+		function func()
+		{
+			alert("Thank-You for Ordering")
+		}
+	</script>
+		
+</head>
+<body>
+<div class="box1">
+	<h2>Your Personal Details</h2>
+	<form onsubmit="func()" action="index.html">
+	<p>First Name : <input type="text" name="" required></p>
+	<p>Last Name : <input type="text" name="" required></p>
+    <p>Complete Address : <input type="text" name="" required></p>
+    	<br><br><br>
+	<button>Save and Continue</button>
+</form>
+</div>
+
+</body>
+</html>
